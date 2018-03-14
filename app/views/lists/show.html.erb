@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Activity</h1>
+  <table class="table table-condensed table-bordered table-hover">
+   <tr>
+     <td>Name</td> 
+     <td><%= @list.name %></td>
+   </tr>
+    
+   <tr> 
+    <td>Due Time</td>
+    <td><%= @list.due_time %></td>
+   </tr>  
+   
+   <tr> 
+    <td>Note</td>
+    <td><%= @list.note %></td>
+  </tr>
+
+</table>
+  <%= link_to 'Back to index', lists_path, class: "btn btn-success" %>
+</div>  
